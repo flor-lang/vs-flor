@@ -5,6 +5,7 @@
 		{ "include": "#comments" },
 		{ "include": "#keywords" },
 		{ "include": "#operators" },
+		{ "include": "#storages" },
 		{ "include": "#strings" },
 		{ "include": "#numbers" },
 		{ "include": "#boolean" },
@@ -15,7 +16,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control",
-				"match": "\\b(faca|entao|fim|se|senao|enquanto|para|cada|retornar|definir)\\b"
+				"match": "\\b(faca|entao|fim|se|senao|enquanto|para|cada|retornar|definir|funcao)\\b"
 			}]
 		},
 		"operators": {
@@ -32,7 +33,15 @@
 					"name": "variable.other",
 					"match": "\\b(nova|novo)\\b"
 				}
-		]
+			]
+		},
+		"storages": {
+			"patterns": [
+				{
+					"name": "storage.type.swift",
+					"match": "\\b(classe|interface)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double",
@@ -60,6 +69,10 @@
 				{
 					"name": "entity.name.function",
 					"match": "([_]*[a-zA-Z][a-zA-Z0-9_]*)(?=[(])"
+				},
+				{
+					"name": "entity.name.class",
+					"match": "(?<=[classe|interface]\\s)([_]*[a-zA-Z][a-zA-Z0-9_]*)"
 				}
 			]
 		},

@@ -6,6 +6,10 @@ definir classe Flor
     fim
 fim
 
+definir interface Nomeavel
+  eita
+fim
+
 flor = nova Flor()
 flor.diga_ola(/*hei*/)
 
