@@ -8,3 +8,5 @@ fim
 
 flor = nova Flor()
 flor.diga_ola(/*hei*/)
+
+numero = 10.0
