@@ -1,0 +1,10 @@
+// Class definition
+definir classe Flor
+  metodos:
+    diga_ola = funcao ()
+      escreva(texto: "Olá Mundo!")
+    fim
+fim
+
+flor = nova Flor()
+flor.diga_ola(/*hei*/)

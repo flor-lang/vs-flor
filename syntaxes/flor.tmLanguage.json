@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Flor",
+	"patterns": [
+		{ "include": "#keywords" },
+		{ "include": "#strings" },
+		{ "include": "#comments" }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.flor",
+				"match": "\\b(faca|entao|fim|se|senao|enquanto|para|cada|retornar|definir)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.flor",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [{
+				"name": "constant.character.escape.flor",
+				"match": "\\\\."
+			}]
+		},
+		"comments": {
+			"patterns": [
+				{ "match": "(//).*",
+					"name": "comment.line.double-slash.flor"
+				},
+				{ "begin": "/\\*",
+					"end": "\\*/",
+					"name": "comment.block.flor"
+				}
+			]
+		}
+	},
+	"scopeName": "source.flor"
+}

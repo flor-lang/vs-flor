@@ -1,0 +1,25 @@
+{
+    "name": "vs-flor",
+    "displayName": "Flor",
+    "description": "Flor Syntax",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "flor",
+            "aliases": ["Flor", "flor"],
+            "extensions": [".flor"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "flor",
+            "scopeName": "source.flor",
+            "path": "./syntaxes/flor.tmLanguage.json"
+        }]
+    }
+}
