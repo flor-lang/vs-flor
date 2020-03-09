@@ -2,13 +2,14 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Flor",
 	"patterns": [
+		{ "include": "#comments" },
 		{ "include": "#keywords" },
-		{ "include": "#identifiers" },
+		{ "include": "#operators" },
 		{ "include": "#strings" },
 		{ "include": "#numbers" },
 		{ "include": "#boolean" },
 		{ "include": "#null" },
-		{ "include": "#comments" }
+		{ "include": "#identifiers" }
 	],
 	"repository": {
 		"keywords": {
@@ -17,9 +18,17 @@
 				"match": "\\b(faca|entao|fim|se|senao|enquanto|para|cada|retornar|definir)\\b"
 			}]
 		},
-		"identifiers": {
-			"name": "entity.name.class",
-			"match": "[_]*[a-zA-Z][a-zA-Z0-9_]*"
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.comparison",
+					"match": "\\b(e|ou|a|igual|diferente|para|cada|de|ate|com|passo)\\b"
+				},
+				{
+					"name": "keyword.operator.comparison",
+					"match": "[\\/=\\-+!*%<>:]"
+				}
+		]
 		},
 		"strings": {
 			"name": "string.quoted.double",
@@ -41,6 +50,10 @@
 		"null": {
 			"name": "constant.other",
 			"match": "\\b(nulo)\\b"
+		},
+		"identifiers": {
+			"name": "entity.name.class",
+			"match": "[_]*[a-zA-Z][a-zA-Z0-9_]*"
 		},
 		"comments": {
 			"patterns": [
