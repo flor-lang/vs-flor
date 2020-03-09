@@ -6,6 +6,7 @@
 		{ "include": "#strings" },
 		{ "include": "#numbers" },
 		{ "include": "#boolean" },
+		{ "include": "#null" },
 		{ "include": "#comments" }
 	],
 	"repository": {
@@ -31,6 +32,10 @@
 		"boolean": {
 			"name": "constant.other",
 			"match": "\\b(verdadeiro|falso)\\b"
+		},
+		"null": {
+			"name": "constant.other",
+			"match": "\\b(nulo)\\b"
 		},
 		"comments": {
 			"patterns": [
