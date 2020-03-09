@@ -5,6 +5,7 @@
 		{ "include": "#keywords" },
 		{ "include": "#strings" },
 		{ "include": "#numbers" },
+		{ "include": "#boolean" },
 		{ "include": "#comments" }
 	],
 	"repository": {
@@ -26,6 +27,10 @@
 		"numbers": {
 			"name": "constant.numeric",
 			"match": "[0-9]+(\\.[0-9]+)?"
+		},
+		"boolean": {
+			"name": "constant.other",
+			"match": "\\b(verdadeiro|falso)\\b"
 		},
 		"comments": {
 			"patterns": [

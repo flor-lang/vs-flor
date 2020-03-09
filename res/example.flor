@@ -10,3 +10,5 @@ flor = nova Flor()
 flor.diga_ola(/*hei*/)
 
 numero = 10.0
+booleano = verdadeiro
+outro_booleano = falso
