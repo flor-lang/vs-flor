@@ -9,27 +9,27 @@
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.flor",
+				"name": "keyword.control",
 				"match": "\\b(faca|entao|fim|se|senao|enquanto|para|cada|retornar|definir)\\b"
 			}]
 		},
 		"strings": {
-			"name": "string.quoted.double.flor",
+			"name": "string.quoted.double",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [{
-				"name": "constant.character.escape.flor",
+				"name": "constant.character.escape",
 				"match": "\\\\."
 			}]
 		},
 		"comments": {
 			"patterns": [
 				{ "match": "(//).*",
-					"name": "comment.line.double-slash.flor"
+					"name": "comment.line.double-slash"
 				},
 				{ "begin": "/\\*",
 					"end": "\\*/",
-					"name": "comment.block.flor"
+					"name": "comment.block"
 				}
 			]
 		}
