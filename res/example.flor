@@ -47,20 +47,21 @@ definir classe Jogo
         privado numero_gols_b = 0
   
     construtor: funcao(time_a, time_b)
-        __time_a = time_a
-        __time_b = time_b
+        super()
+        __.time_a = time_a
+        __.time_b = time_b
     fim
 
     metodos:
         marcar_gol = funcao(time)
             se time igual a __time_a entao
-                __numero_gols_a = __numero_gols_a + 1
+                __.numero_gols_a = __.numero_gols_a + 1
             senao
-                __numero_gols_b = __numero_gols_b + 1
+                __.numero_gols_b = __.numero_gols_b + 1
             fim
         fim
 
-        texto = () := __time_a + ": " + __numero_gols_a + " | " + __time_b + ": " + __numero_gols_b
+        texto = () := __.time_a + ": " + __.numero_gols_a + " | " + __.time_b + ": " + __.5numero_gols_b
 fim
 
 jogo = novo Jogo(time_a: "Fortaleza", time_b: "Independiente")
