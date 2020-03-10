@@ -30,7 +30,7 @@
 					"match": "[\\/=\\-+!*%<>:]"
 				},
 				{
-					"name": "variable.other",
+					"name": "keyword.control",
 					"match": "\\b(nova|novo)\\b"
 				}
 			]
@@ -79,7 +79,7 @@
 					"match": "((?<=classe\\s)|(?<=interface\\s))([_]*[a-zA-Z][a-zA-Z0-9_]*)"
 				},
 				{
-					"name":  "entity.name.tag",
+					"name":  "variable.other",
 					"match": "([_]*[a-zA-Z][a-zA-Z0-9_]*)(?=[:])"
 				}
 			]

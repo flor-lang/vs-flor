@@ -1,28 +1,24 @@
 // Interface defition
 definir interface Nomeavel
-  eita
+    eita
 fim
 
 // Class definition
 definir classe Flor
-  interfaces: Nomeavel
+    interfaces: Nomeavel
 
-  propriedades:
-    estatico instancia = nova Flor()
-    privado teste
-    eita
+    propriedades:
+        estatico instancia = nova Flor()
+        privado teste
+        eita
 
-  metodos:
-    diga_ola = funcao ()
-      escreva(texto: "Olá Mundo!")
-    fim
+    metodos:
+        diga_ola = funcao ()
+            escreva(texto: "Olá Mundo!")
+        fim
 fim
 
-faca
- t = 0
-enquanto viver
-fim
-
+faca t = 0 enquanto vive fim
 
 flor = nova Flor()
 flor.diga_ola(/*hei*/)
@@ -31,8 +27,42 @@ numero = 10.0
 booleano = verdadeiro
 outro_booleano = falso
 vazio = nulo
-fun = (x, y):= x >= y
+fun = (x, y) := x >= y
 
 se numero igual a 10 e numero diferente de 5 entao
-  escreva(texto: "Eita nois")
+    escreva(texto: "Eita nois")
 fim
+
+definir interface Disputa
+    time_a time_b
+fim
+
+definir classe Jogo
+    interfaces: Disputa
+
+    propriedades:
+        time_a
+        time_b
+        privado numero_gols_a = 0
+        privado numero_gols_b = 0
+  
+    construtor: funcao(time_a, time_b)
+        __time_a = time_a
+        __time_b = time_b
+    fim
+
+    metodos:
+        marcar_gol = funcao(time)
+            se time igual a __time_a entao
+                __numero_gols_a = __numero_gols_a + 1
+            senao
+                __numero_gols_b = __numero_gols_b + 1
+            fim
+        fim
+
+        texto = () := __time_a + ": " + __numero_gols_a + " | " + __time_b + ": " + __numero_gols_b
+fim
+
+jogo = novo Jogo(time_a: "Fortaleza", time_b: "Independiente")
+jogo.marcar_gol(time: "Fortaleza")
+escreva(texto: jogo)
