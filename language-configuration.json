@@ -9,7 +9,11 @@
     "brackets": [
         ["{", "}"],
         ["[", "]"],
-        ["(", ")"]
+        ["(", ")"],
+        ["entao", "fim"],
+        ["faca", "fim"],
+        ["funcao", "fim"],
+        ["definir", "fim"]
     ],
     // symbols that are auto closed when typing
     "autoClosingPairs": [
@@ -17,7 +21,11 @@
         ["[", "]"],
         ["(", ")"],
         ["\"", "\""],
-        ["'", "'"]
+        ["'", "'"],
+        ["entao", "fim"],
+        ["faca", "fim"],
+        ["funcao", "fim"],
+        ["definir", "fim"]
     ],
     // symbols that that can be used to surround a selection
     "surroundingPairs": [
@@ -25,6 +33,10 @@
         ["[", "]"],
         ["(", ")"],
         ["\"", "\""],
-        ["'", "'"]
+        ["'", "'"],
+        ["entao", "fim"],
+        ["faca", "fim"],
+        ["funcao", "fim"],
+        ["definir", "fim"]
     ]
 }

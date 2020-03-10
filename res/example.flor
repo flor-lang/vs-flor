@@ -1,14 +1,28 @@
+// Interface defition
+definir interface Nomeavel
+  eita
+fim
+
 // Class definition
 definir classe Flor
+  interfaces: Nomeavel
+
+  propriedades:
+    estatico instancia = nova Flor()
+    privado teste
+    eita
+
   metodos:
     diga_ola = funcao ()
       escreva(texto: "Olá Mundo!")
     fim
 fim
 
-definir interface Nomeavel
-  eita
+faca
+ t = 0
+enquanto viver
 fim
+
 
 flor = nova Flor()
 flor.diga_ola(/*hei*/)
@@ -20,5 +34,5 @@ vazio = nulo
 fun = (x, y) := x >= y
 
 se numero igual a 10 e numero diferente de 5 entao
-  escreva(texto: numero)
+  escreva(texto: "Eita nois")
 fim
