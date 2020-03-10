@@ -3,6 +3,8 @@
     "displayName": "Flor",
     "description": "Flor Syntax",
     "version": "0.0.1",
+    "publisher": "mariomatheu",
+    "icon": "res/icon.png",
     "engines": {
         "vscode": "^1.42.0"
     },
