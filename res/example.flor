@@ -48,20 +48,20 @@ definir classe Jogo
   
     construtor: funcao(time_a, time_b)
         super()
-        __.time_a = time_a
-        __.time_b = time_b
+        #time_a = time_a
+        #time_b = time_b
     fim
 
     metodos:
         marcar_gol = funcao(time)
             se time igual a __time_a entao
-                __.numero_gols_a = __.numero_gols_a + 1
+                #numero_gols_a = #numero_gols_a + 1
             senao
-                __.numero_gols_b = __.numero_gols_b + 1
+                #numero_gols_b = #numero_gols_b + 1
             fim
         fim
 
-        texto = () := __.time_a + ": " + __.numero_gols_a + " | " + __.time_b + ": " + __.5numero_gols_b
+        texto = () := #time_a + ": " + #numero_gols_a + " | " + #time_b + ": " + #numero_gols_b
 fim
 
 jogo = novo Jogo(time_a: "Fortaleza", time_b: "Independiente")

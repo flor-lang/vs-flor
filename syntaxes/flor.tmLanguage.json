@@ -71,8 +71,8 @@
 		"identifiers": {
 			"patterns": [
 				{
-					"name": "variable.language.swift",
-					"match": "\\b(super|__)\\b"
+					"name": "variable.language.flor",
+					"match": "(\\b(super)\\b)|#[_]*([a-zA-Z_][a-zA-Z0-9]+|[a-zA-Z])+"
 				},
 				{
 					"name": "entity.name.function",
