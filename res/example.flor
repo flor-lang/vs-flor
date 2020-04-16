@@ -22,7 +22,7 @@ faca t = 0 enquanto vive fim
 
 flor = nova Flor()
 flor.diga_ola(/*hei*/)
-
+ponto1
 numero = 10.0
 booleano = verdadeiro
 outro_booleano = falso

@@ -58,7 +58,7 @@
 		},
 		"numbers": {
 			"name": "constant.numeric",
-			"match": "[0-9]+(\\.[0-9]+)?"
+			"match": "\\b[0-9]+(\\.[0-9]+)?\\b"
 		},
 		"boolean": {
 			"name": "constant.language",
