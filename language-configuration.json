@@ -10,7 +10,7 @@
         ["{", "}"],
         ["[", "]"],
         ["(", ")"],
-        ["entao", "fim"],
+        ["se", "fim"],
         ["faca", "fim"],
         ["funcao", "fim"],
         ["definir", "fim"]
@@ -28,7 +28,7 @@
         ["[", "]"],
         ["(", ")"],
         ["\"", "\""],
-        ["entao", "fim"],
+        ["se", "fim"],
         ["faca", "fim"],
         ["funcao", "fim"],
         ["definir", "fim"]

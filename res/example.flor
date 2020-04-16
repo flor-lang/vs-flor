@@ -20,6 +20,16 @@ fim
 
 faca t = 0 enquanto vive fim
 
+obter_quadrante = funcao ()
+    se #x > 0 entao
+        se #y > 0 entao retornar 1 senao retornar 4 fim
+    senaose #y > 0 entao
+        retornar 2 
+    senao
+        retornar 3
+    fim
+fim
+
 flor = nova Flor()
 flor.diga_ola(/*hei*/)
 ponto1
