@@ -27,7 +27,7 @@
 				},
 				{
 					"name": "keyword.operator.comparison",
-					"match": "[\\/=\\-+!*%<>:]"
+					"match": "[\\/=\\-+!*%^<>:]"
 				},
 				{
 					"name": "keyword.operator.new",
