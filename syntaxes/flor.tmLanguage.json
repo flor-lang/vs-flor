@@ -16,7 +16,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control",
-				"match": "\\b(faca|entao|fim|se|senao|senaose|enquanto|para|cada|retornar|definir|funcao|continuar|interromper)\\b"
+				"match": "\\b(faca|entao|fim|se|senao|senao_se|enquanto|para|cada|retornar|definir|funcao|pular_iteracao|interromper_laco)\\b"
 			}]
 		},
 		"operators": {
