@@ -1,15 +1,15 @@
-// Interface defition
+// Definicao de Interface
 definir interface Nomeavel
     eita
 fim
 
-// Class definition
+// Definicao de Classe
 definir classe Flor
     interfaces: Nomeavel
 
     propriedades:
         estatico instancia = nova Flor()
-        privado teste
+        _teste
         eita
 
     metodos:
@@ -23,7 +23,7 @@ faca t = 0 enquanto vive fim
 obter_quadrante = funcao ()
     se #x > 0 entao
         se #y > 0 entao retornar 1 senao retornar 4 fim
-    senaose #y > 0 entao
+    senao_se #y > 0 entao
         retornar 2 
     senao
         retornar 3
@@ -32,7 +32,6 @@ fim
 
 flor = nova Flor()
 flor.diga_ola(/*hei*/)
-ponto1
 numero = 10.0
 booleano = verdadeiro
 outro_booleano = falso

@@ -39,7 +39,7 @@
 			"patterns": [
 				{
 					"name": "storage.modifier",
-					"match": "\\b(privado|publico|estatico)\\b"
+					"match": "\\b(estatico)\\b"
 				},
 				{
 					"name": "storage.type.swift",
