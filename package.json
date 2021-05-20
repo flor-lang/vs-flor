@@ -2,7 +2,7 @@
     "name": "vs-flor",
     "displayName": "Linguagem Flor: Sintaxe",
     "description": "Extensão do VSCode para a linguagem brasileira Flor",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "mariomatheu",
     "icon": "res/icon.png",
     "engines": {
@@ -16,16 +16,25 @@
         "url": "https://github.com/flor-lang/vs-flor"
     },
     "contributes": {
-        "languages": [{
-            "id": "flor",
-            "aliases": ["Flor", "flor"],
-            "extensions": [".flor"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "flor",
-            "scopeName": "source.flor",
-            "path": "./syntaxes/flor.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "flor",
+                "aliases": [
+                    "Flor",
+                    "flor"
+                ],
+                "extensions": [
+                    ".flor"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "flor",
+                "scopeName": "source.flor",
+                "path": "./syntaxes/flor.tmLanguage.json"
+            }
+        ]
     }
 }
